@@ -1,0 +1,364 @@
+.grid-container {
+/*   background-color: black; */
+  width: 1440px; 
+  height: 3800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.45fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "navi navi navi navi navi navi navi navi navi"
+    "home home home home home home home home home"
+    "home home home home home home home home home"
+    "home home home home home home home home home"
+    "bestseller bestseller bestseller bestseller bestseller bestseller bestseller bestseller bestseller"
+    "bestseller bestseller bestseller bestseller bestseller bestseller bestseller bestseller bestseller"
+    "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus"
+    "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus"
+    "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus"
+    "testimonial testimonial testimonial testimonial testimonial testimonial testimonial testimonial testimonial"
+    "testimonial testimonial testimonial testimonial testimonial testimonial testimonial testimonial testimonial"
+    "testimonial testimonial testimonial testimonial testimonial testimonial testimonial testimonial testimonial"
+    "endnavi endnavi endnavi endnavi endnavi endnavi endnavi endnavi endnavi";
+}
+
+.navi { grid-area: navi; 
+font-family: Quattrocento;
+}
+
+#pessimism1 {
+  font-size: 24px;
+  font-weight:bold;
+  padding-top: 48px;
+  padding-left: 48px;
+  text-decoration: none;
+  color: black;
+}
+
+#optimism1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 48px; 
+  padding-bottom: 48px; 
+  padding-left: 240px;
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  font-size: 72px; 
+  font-weight:bold;
+  text-align: center;
+  padding-top: 24px;
+  text-decoration: none;
+  color: black;
+
+}
+
+#login {
+  font-size: 24px; 
+  font-weight: bold; 
+  padding-left: 1100px;
+  padding-top: 48px;
+
+}
+
+#cart {
+  padding-left: 1300px;
+  padding-top: 35px; 
+}
+
+.endnavi { grid-area: endnavi; }
+
+.home { grid-area: home; 
+padding-bottom: 100px;
+}
+
+#image {
+  background-repeat: no-repeat;
+
+}
+
+#ourproduct {
+background-repeat: no-repeat;
+  padding-left: 200px;
+  padding-top: 600px;
+}
+
+.bestseller { 
+  grid-area: bestseller; 
+  text-align: center;
+  font-family: Hammersmith One;
+  font-size: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#bestsellertitle {
+  text-align: center;
+  font-family: Hammersmith One;
+  font-size: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #CEAF9A;
+}
+
+#bestseller1 {
+  padding-top: 150px;
+  padding-right: 975px;
+}
+
+#bestseller2 {
+  padding-top: 150px;
+  padding-right: 325px;
+}
+
+#bestseller3 {
+  padding-top: 150px;
+  padding-left: 325px;
+  
+}
+
+#bestseller4 {
+  padding-top: 150px;
+  padding-left: 975px;
+}
+
+#leftbutton {
+  padding-top: 290px;
+  padding-right: 1340px;
+}
+
+#rightbutton {
+  padding-top: 290px; 
+  padding-left: 1340px;
+}
+.aboutus { grid-area: aboutus; }
+
+#aboutustitle {
+  font-family: Hammersmith One;
+  font-size: 64px; 
+  text-align: center; 
+  padding-top: 610px;
+  background-color: #CEAF9A;
+}
+
+#aboutustext {
+  font-family: Hammersmith One; 
+  text-align: center; 
+  font-size: 24px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 700px;
+}
+
+#seemore {
+  text-align: center;
+  padding-top: 820px;
+}
+
+
+.testimonial { 
+  grid-area: testimonial;
+}
+
+#testimonialsTitle {
+  text-align: center;
+  font-size: 64px;
+  color: black;
+  background-color: #CEAF9A;
+  font-family: Hammersmith One;
+  padding-top: 50px;
+}
+
+/* Slideshow container */
+#slideshow-container {
+  max-width: 932px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  padding-left: 50px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dot_lol {
+  text-align: center;
+  padding-top: 790px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.endnavi {grid-area: endnavi;
+  color: white;
+  font-family: Quattrocento;
+}
+
+#contactUs {
+  font-weight: bold;
+  font-size: 36px;
+  padding-top: 55px;
+  padding-left: 115px;
+  background-color: black;
+}
+
+#KokoneMail {
+  padding-top: 200px;
+  padding-left: 115px;
+  font-size: 23px;
+  
+} 
+
+#SelvanMail {
+  padding-top: 240px;
+  padding-left: 115px;
+  font-size: 23px;
+  
+}
+
+#KokoneNo {
+  padding-top: 160px;
+  padding-left: 115px;
+  font-size: 23px;
+  
+}
+
+#SelvanNo {
+  padding-top: 120px;
+  padding-left: 115px;
+  font-size: 23px;
+}
+
+#shop {
+  font-size: 36px; 
+  font-weight: bold;
+  padding-top: 55px; 
+  padding-left: 515px;
+}
+
+#optimism2 {
+  font-size: 23px; 
+  padding-top: 120px;
+  padding-left: 515px;
+  text-decoration: none;
+}
+
+#pessimism2 {
+  font-size: 23px; 
+  padding-top: 160px;
+  padding-left: 515px;
+}
+
+#enter {
+  font-size: 23px; 
+  padding-top: 55px; 
+  padding-left: 830px;
+}
+
+#email {
+  padding-top: 120px;
+  padding-left: 830px;
+}
+
+#signup {
+  padding-top: 120px; 
+  padding-left: 1200px;
+}
+
+#copyright {
+  padding-top: 230px;
+  font-size: 23px;
+  padding-left: 1090px;
+}
